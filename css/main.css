@@ -147,7 +147,6 @@ nav ul li:last-child a {
 }
 /*---- Page Specific Content ----*/
 /*-PAGE- Home -PAGE-*/
-/* Camera of the Week */
 #cotw {
 	background-image: url('../images/background.jpg');
 	background-repeat: repeat;
@@ -178,7 +177,6 @@ nav ul li:last-child a {
 	max-width: 25%;
 	max-height: 25%;
 }
-/* Welcome */
 #welcome {
 	background-image: url('../images/background.jpg');
 	background-repeat: repeat;
@@ -273,6 +271,27 @@ table.center {
 }
 /*-PAGE- Favorites -PAGE-*/
 #favorites {
+	text-align: center;
+}
+/*-PAGE- Log In -PAGE-*/
+
+/*-PAGE- Sign Up -PAGE-*/
+#signup h1 {
+	text-align: center;
+	margin-bottom: 0.3em;
+}
+#signup {
+	margin: auto;
+	width: 40%;
+}
+#signup label {
+	width: 8em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	display: block;
+}
+.centerfix {
 	text-align: center;
 }
 /*---- End Page Specific Content ----*/
