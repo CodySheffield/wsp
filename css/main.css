@@ -273,8 +273,21 @@ table.center {
 #favorites {
 	text-align: center;
 }
+.centerfix {
+	text-align: center;
+}
 /*-PAGE- Log In -PAGE-*/
-
+#login h1 {
+	text-align: center;
+	margin-bottom: 0.3em;
+}
+#login form {
+	text-align: center;
+}
+#login p {
+	text-align: center;
+	margin-bottom: 0.3em;
+}
 /*-PAGE- Sign Up -PAGE-*/
 #signup h1 {
 	text-align: center;
