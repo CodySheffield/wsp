@@ -10,23 +10,36 @@ h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
 /*---- End CSS Reset ---*/
 /* Body */
 body {
-	width: 80%;
 	max-width: 960px;
 	margin: 0px auto;
 	font: 100% Arial, Helvetica, sans-serif;
 }
+#wrapper {
+	margin: auto;
+	width: 90%;
+}
 h1 {
 	font-size: x-large;
-	text-align: center;
+}
+h2 {
+	font-size: large;
+}
+h3 {font-size: medium;
 }
 /* Logo */
-#logo {
-	text-align: center;
+.logo {
+	display: block;
+	margin-top: 0.5em;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	max-height: 116px;
+	max-width: 960px;
 }
 /* Navigation */
 nav {
 	width: 100%;
-	margin: 20px 0;
+	margin: 0.7em 0;
 }
 nav ul {
 	width: 100%;
@@ -47,29 +60,26 @@ nav ul li a {
 	padding: 8px 0;
 	display: block;
 	width: 100%;
-	background: #cdeb8e; /* For old browsers */
-	background: -moz-linear-gradient(top, #cdeb8e 0%, #b0ca34 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdeb8e), color-stop(100%, #b0ca34)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #cdeb8e 0%, #b0ca34 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #cdeb8e 0%, #b0ca34 100%); /* Opera 11.10+ */
-	background: linear-gradient(to bottom, #cdeb8e 0%, #b0ca34 100%); /* W3C standard, IE10+ */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#b0ca34', GradientType=0 ); /* IE6-9 */
+	background: ##AFB9DB; /* For old browsers */
+	background: -moz-linear-gradient(top, #AFB9DB 0%, #6685E0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #AFB9DB), color-stop(100%, #6685E0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #AFB9DB 0%, #6685E0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #AFB9DB 0%, #6685E0 100%); /* Opera 11.10+ */
+	background: linear-gradient(to bottom, #AFB9DB 0%, #6685E0 100%); /* W3C standard, IE10+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AFB9DB', endColorstr='#6685E0', GradientType=0 ); /* IE6-9 */
 }
 nav ul li a:hover {
-	background: #b0ca34; /* Old browsers */
-	background: -moz-linear-gradient(top, #b0ca34 0%, #96c40d 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b0ca34), color-stop(100%, #96c40d)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #b0ca34 0%, #96c40d 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #b0ca34 0%, #96c40d 100%); /* Opera 11.10+ */
-	background: linear-gradient(to bottom, #b0ca34 0%, #96c40d 100%); /* W3C standard, IE10+ */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ca34', endColorstr='#96c40d', GradientType=0 ); /* IE6-9 */
+	background: #6685E0; /* Old browsers */
+	background: -moz-linear-gradient(top, #6685E0 0%, #AFB9DB 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6685E0), color-stop(100%, #AFB9DB)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6685E0 0%, #AFB9DB 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6685E0 0%, #AFB9DB 100%); /* Opera 11.10+ */
+	background: linear-gradient(to bottom, #6685E0 0%, #AFB9DB 100%); /* W3C standard, IE10+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6685E0', endColorstr='#AFB9DB', GradientType=0 ); /* IE6-9 */
 }
-nav ul li a, nav ul li a:focus, nav ul li a:visited, nav ul li a:active {
-	color: #000;
-	text-decoration: none;
-}
-nav ul li a:hover {
+nav ul li a, nav ul li a:focus, nav ul li a:visited, nav ul li a:active, nav ul li a:hover {
 	color: #fff;
+	text-decoration: none;
 }
 nav ul li:first-child a {
 	border-top-left-radius: 8px;
@@ -80,22 +90,23 @@ nav ul li:last-child a {
 	border-bottom-right-radius: 8px;
 }
 /* Disclaimer */
-.disclaimer {
-	/*float: left;
-	position: relative;*/
+#disclaimer {
+	font-size: 0.7em;
 	text-align: center;
-	font-size: small;
-}	
+}
 /*---- Page Specific Content ----*/
 /* Camera of the Week */
 #cotw {
-	border: 0.15em solid #666;
+	background-image:url('../images/background.jpg');
+	background-repeat:repeat;
+	border: 0.15em solid #000;
 	padding: 0.2em;
 	margin-top: 1.0em;
 	margin-left: auto;
 	margin-right: auto;
 }
 #cotw h1 {
+	text-align: center;
 	margin-bottom: 0.5em;
 }
 #cotw h3 {
@@ -106,14 +117,17 @@ nav ul li:last-child a {
 	margin-top: 0.5em;
 }
 #cotw img {
-	float: left;
+	background: #fff;
+	float: right;
 	border: 0.15em solid #000;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
 	margin-left: 0.5em;
-	margin-right: 0.5em;
-	margin-top: 0.5em;
+	margin-right: 0.3em;
+	margin-top: 0.3em;
 	margin-bottom: 0.5em;
-	max-width: 27%;
-	max-height: 27%;
+	max-width: 21%;
+	max-height: 21%;
 }
 /*---- End Page Specific Content ----*/
 /*---- Media Queries ----*/
@@ -121,10 +135,14 @@ nav ul li:last-child a {
 nav ul li a {
 	font-size: large;
 }
-h1 {
-	font-size: large;
-}
 /* Page Specific */
+#cotw h1 {
+	text-align: center;
+}
+#cotw h3 {
+	text-align: center;
+	font-size: medium;
+}
 }
  @media screen and (max-width: 480px) {
 nav ul li a {
@@ -133,6 +151,12 @@ nav ul li a {
 /* Page Specific */
 }
  @media screen and (max-width: 400px) { /* browser window may not go this narrow, change it to 400px wide so you can see it work */
+#cotw img {
+	display: none;
+}
+#cotw h3 {
+	font-size: small;
+}
 }
 /* Page Specific */
 /*---- End Media Queries ----*/
