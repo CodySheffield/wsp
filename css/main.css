@@ -217,6 +217,64 @@ table.center {
 	margin-left: auto;
 	margin-right: auto;
 }
+/*-PAGE- Details -PAGE-*/
+.tabs {
+	position: relative;
+	min-height: 2250px; /* This part REALLY sucks! */
+	clear: both;
+	margin: 25px 0;
+}
+.tab {
+	float: left;
+}
+.tab label {
+	background: #eee;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-left: -1px;
+	position: relative;
+	left: 1px;
+}
+.tab [type=radio] {
+	display: none;
+}
+.content {
+	position: absolute;
+	top: 28px;
+	left: 0;
+	background: white;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+[type=radio]:checked ~ label {
+	background: white;
+	border-bottom: 1px solid white;
+	z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+	z-index: 1;
+}
+.overview img {
+	float: left;
+	margin-right: 1em;
+	height: 100%;
+	width: 100%;
+	max-width: 345px;
+	max-height: 345px;
+}
+.overview h1, h3 {
+	text-align: center;
+}
+.overview p {
+	margin-top: 0.5em;
+}
+/*-PAGE- Favorites -PAGE-*/
+#favorites {
+	text-align: center;
+}
 /*---- End Page Specific Content ----*/
 /*---- Media Queries ----*/
 @media screen and (max-width: 770px) {
