@@ -6,10 +6,10 @@
 <link href="css/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="wrapper">
 <header> 
-<!-- Logo --> 
-<img src="images/logo.jpg" alt="logo" width="960" height="119" class="logo">
+  <!-- Logo --> 
+  <img src="images/logo.jpg" alt="logo" width="960" height="119" class="logo"> 
+  <!-- Navigation -->
   <div id="navigation">
     <nav>
       <ul>
@@ -20,10 +20,17 @@
       </ul>
     </nav>
   </div>
+  <!--Search Bar -->
+  <div id="searchbar">
+    <form id="itemsearch" method="get" action="search.html">
+      <input type="text" class="tftextinput" name="q" size="21" maxlength="120">
+      <input type="submit" value="Search" class="tfbutton">
+    </form>
+    <div class="tfclear"></div>
+  </div>
 </header>
 <!-- Camera of the Week -->
-<div id="cotw">
-  <img src="images/camera.jpg" alt="camera">
+<div id="cotw"> <img src="images/camera.jpg" alt="camera">
   <h1>Camera of the Day</h1>
   <h3><a href="detail.html">Nikon D800 SLR Camera (Body)</a></h3>
   <p>The black Nikon D800 SLR camera is dust proof and features a high 36.3 MP resolution that produces 1080p HD cinematic photos. Some of the key features on this Nikon camera body include an input for headphones, an input for a microphone, a DX crop mode, and an OLPF filter. The OLPF, or optical low-pass filter, is located in front of the sensor. Furthermore, this Nikon camera offers a 3.2-inch LCD display screen to view photos taken with the option to remove them if desired.</p>
@@ -34,6 +41,5 @@
     <p>Copyright 2014 - The Photo Shop and the The Photo Shop logo are the registered trademarks of Sheffield Web Design. All rights are reserved worldwide.</p>
   </div>
 </footer>
-</div>
 </body>
 </html>
