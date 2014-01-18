@@ -14,9 +14,11 @@ body {
 	width: 90%;
 	margin: 0px auto;
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
 }
 h1 {
 	font-size: x-large;
+	margin-top: 0.5em;
 }
 h2 {
 	font-size: large;
@@ -139,10 +141,12 @@ nav ul li:last-child a {
 }
 /* Disclaimer */
 #disclaimer {
+	margin-top: 0.5em;
 	font-size: 0.7em;
 	text-align: center;
 }
 /*---- Page Specific Content ----*/
+/*-PAGE- Home -PAGE-*/
 /* Camera of the Week */
 #cotw {
 	background-image: url('../images/background.jpg');
@@ -153,10 +157,6 @@ nav ul li:last-child a {
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-}
-#cotw h1 {
-	text-align: center;
-	margin-bottom: 0.5em;
 }
 #cotw h3 {
 	text-align: center;
@@ -175,8 +175,47 @@ nav ul li:last-child a {
 	margin-right: 0.3em;
 	margin-top: 0.3em;
 	margin-bottom: 0.5em;
-	max-width: 30%;
-	max-height: 30%;
+	max-width: 25%;
+	max-height: 25%;
+}
+/* Welcome */
+#welcome {
+	background-image: url('../images/background.jpg');
+	background-repeat: repeat;
+	border: 0.15em solid #000;
+	padding: 0.2em;
+	margin-top: 1.0em;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+#welcome p {
+	margin-top: 0.5em;
+}
+/*-PAGE- Search -PAGE-*/
+#results {
+	text-align: center;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #999;
+}
+td {
+	text-align: left;
+	border: 1px solid #999;
+	padding: 0.3em;
+}
+th {
+	text-align: left;
+	background-color: #AFB9DB;
+	border: 1px solid #999;
+	color: #fff;
+	padding: 0.3em;
+}
+table.center {
+	margin-left: auto;
+	margin-right: auto;
 }
 /*---- End Page Specific Content ----*/
 /*---- Media Queries ----*/
@@ -185,9 +224,6 @@ nav ul li a {
 	font-size: large;
 }
 /* Page Specific */
-#cotw h1 {
-	text-align: center;
-}
 #cotw h3 {
 	text-align: center;
 	font-size: medium;
